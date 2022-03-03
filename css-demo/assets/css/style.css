@@ -5,6 +5,56 @@ Style sheet for CSS Demo
  */
 
 body {
-    background-color:antiquewhite;
+    background-color: #ECEAF1;
 }
 
+/* ---------------Box Sizing----------------- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  /* --------------- Color Scheme ----------------- 
+  darkest #1C1C25
+  dark #566373
+  middle #A9AFBD
+  light #C3CDE0
+  lightest #ECEAF1
+  */
+
+ /* ---------------Global Styles----------------- */
+
+
+
+  body {
+    font-family: 'Lora', serif;
+    color:black;
+
+  }
+
+  header.primary {
+    background-color:#C3CDE0;
+    text-align:center;
+    color: white;
+
+/* top right bottom left*/
+    padding: 40px 40px 20px 40px;
+    text-shadow: 2px 2px 9px pink; 
+    
+  }
+
+  header.primary h1 {
+ 
+    font-size: 2.2rem;
+    margin: 20px 0;
+
+  }
+
+  header.primary h1 a{
+      color:#566373;
+  }
