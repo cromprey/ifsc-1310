@@ -44,8 +44,6 @@ html {
 
 /* top right bottom left*/
     padding: 40px 40px 20px 40px;
-    text-shadow: 2px 2px 9px pink; 
-    
   }
 
   header.primary h1 {
@@ -57,4 +55,49 @@ html {
 
   header.primary h1 a{
       color:#566373;
+      text-decoration:none;
   }
+
+  header.primary h2{
+    font-size:1.4rem;
+    /* top | left/right | bottom */
+    margin:20px auto 40px;
+  }
+
+  header.primary nav {
+    width:80vw;
+    margin: 20px auto;
+    max-width:900px;
+  }
+
+  header.primary nav ul{
+    /* removes extra space for list item attatchments*/
+    padding:0;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+ 
+  
+  }
+  header.primary nav ul li{
+    list-style-type:none;
+  }
+  header.primary nav ul li a{
+    color:#566373;
+    text-decoration:none;
+    font-size:1.3rem;
+    background-color:#ECEAF1;
+    padding:8px 16px;
+    display:inline-block;
+    border-radius: 0px; /* you can change this to make the corners more rounded,
+    can take values and double values */
+    transition:.3s;
+  }
+
+  /* this makes it so that if I hover over the buttons,
+  they change color to show that they are interactive*/
+  header.primary nav a:hover, header.primary nav ul li a:active{
+    background-color:#C6C5DB;
+  }
+
+
