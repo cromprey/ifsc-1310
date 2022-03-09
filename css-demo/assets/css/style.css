@@ -25,6 +25,23 @@ html {
   margin:40px auto;
 }
 
+img{
+  max-width:100%;
+}
+
+
+/* If i wanted to make this a left style image, I would go to the
+html code and change the class for this image and replace the word left
+with the word right. I could also do this with centering it
+I would need to change the auto margin and margin qualities to fix it.
+*/
+.img-right{
+  float:right;
+  margin-left:20px;
+  border:2px solid #A9AFBD;
+  padding:5px;
+}
+
   /* --------------- Color Scheme ----------------- 
   darkest #1C1C25
   dark #566373
@@ -38,7 +55,6 @@ html {
   body {
     font-family: 'Lora', serif;
     color:black;
-
   }
 
   header.primary {
@@ -51,10 +67,8 @@ html {
   }
 
   header.primary h1 {
- 
     font-size: 2.2rem;
     margin: 20px 0;
-
   }
 
   header.primary h1 a{
@@ -80,12 +94,12 @@ html {
     display:flex;
     flex-direction:row;
     justify-content:space-between;
- 
-  
   }
+
   header.primary nav ul li{
     list-style-type:none;
   }
+
   header.primary nav ul li a{
     color:#566373;
     text-decoration:none;
@@ -104,6 +118,213 @@ html {
     background-color:#C6C5DB;
   }
 
+/*this is how we call the section id="intro*/
+#intro{
+  border-bottom: 2px solid #C3CDE0;
+  padding-bottom: 1.3rem;
+}
+
+#intro h2{
+  color: #566373;
+  /*text-decoration:underline;   this is possible*/
+  border-bottom: 2px solid #C3CDE0;
+  padding-bottom:.5rem;
+}
+
+#content{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  padding-bottom:2.8rem;
+  border-bottom:1px solid #C3CDE0;
+}
+
+#content article.post{
+  width:30%;
+  box-shadow: 0 4px 8px #C6C5DB;
+  padding:10px;
+  border-radius:4px;
+  font-size:.7rem;
+  transition:.5s;
+}
+
+#content article.post:hover{
+  box-shadow: 0 8px 16px #566373;
+}
+
+#content time.post-date, figcaption, .post-meta{
+  text-transform:capitalize;
+  color:#566373;
+  font-size:.9rem;
+  padding:bottom;
+}
+
+.post figure{
+  margin:0;
+}
+
+.post img{
+  border:1px solid #A8AEBD;
+  padding:1px;
+}
+
+.post h2 a{
+  color: #7993c4;
+}
+
+.post a{
+  color: #7993c4;
+  transition:2s;
+}
+
+.post a:hover, .post a:active{
+  text-decoration:none;
+  color:#FF8365;
+}
+
+aside[role="complementary"]{
+  background-color:#bac0cf;
+  color:#faf9fc;
+  padding:1.8rem;
+
+}
+
+aside div.container{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+aside article.widget{
+  width:45%;
+}
+
+article.widget a{
+
+  color:white;
+  display:block;
+  margin-top:.8rem;
+  text-align:left;
+  transition:1s
+}
+
+article.widget a:hover{
+  text-decoration:none;
+  color:#b44d33;
+
+}
+
+article.widget footer{
+  display:none;
+}
+
+#colophon{
+  background-color: #566373;
+  color:#ECEAF1;
+
+}
+
+#addition-elements h2{
+  border-left: 8px solid #A9AFBD;
+}
+
+#additional-elements a{
+color:#566373;
+}
+
+#additional-elements a:hover{
+  text-decoration:none;
+  }
+
+#additional-elements h3{
+  border-left: 8px solid #A9AFBD;
+  padding: 5px 10px;
+}
+
+table{
+  width:100%;
+  border:2px solid #A8AEBD;
+  border-collapse: collapse;
+}
+
+tr{}
+ 
+tr:nth-child(odd){
+  background-color: #e5eaf3;
+}
+
+td:nth-child(2n), td:nth-child(3n){
+  text-align:right;
+}
+
+tr:hover{
+  background-color:#c5c9d1;
+}
+
+
+th{
+  background:#C3CDE0;
+  color: #566373;
+  width:33%;
+  padding:10px;
+  font-size:1.3rem;
+}
+
+td{
+  border:2px solid #A8AEBD;
+}
+
+table caption {
+  color:#566373;
+  padding:10px;
+  font-weight:bold;
+  font-size:1.4rem;
+}
+
+#additional-elements ol{
+  list-style-type:upper-roman;
+  list-style-position:outside;
+}
+
+#additional-elements ul{
+  list-style-type:square;
+}
+
+#additional-elements ul ul{
+  list-style-type:disc;
+}
+
+
+dl{}
+dt{
+  margin-top:1rem;
+  font-weight:bold;}
+dd{
+margin-left:0;
+}
+
+/*Adjacent Sibling Combinator*/
+dd + dt{
+  margin-top:1rem;
+}
+
+#additional-elements blockquote{
+  background-color: #ECEAF1;
+  padding:30px 40px;
+  border:5px double #566373;
+  border-radius:15px;
+  font-size:1.2rem;
+  color: #1C1C25;
+}
+
+#additional-elements cite{
+  display:block;
+  font-size:.6rem;
+  text-align:right;
+  font-weight:bold;
+  margin-top:1.2rem;
+}
+
 
 @media screen and (max-width:720px){
   header.primary nav ul {
@@ -118,19 +339,4 @@ html {
   header.primary nav li{
     margin-bottom:10px;
   }
-}
-
-/*this is how we call the section id="intro*/
-#intro{
-  border-bottom: 2px solid #C3CDE0;
-  padding-bottom: 1.3rem;
-}
-
-#intro h2{
-  color: #566373;
-  /*text-decoration:underline;   this is possible*/
-  border-bottom: 2px solid #C3CDE0;
-  padding-bottom:.5rem;
-
-
 }
