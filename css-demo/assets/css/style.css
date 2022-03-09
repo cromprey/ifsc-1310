@@ -19,6 +19,12 @@ html {
     box-sizing: inherit;
   }
 
+/*------------Utility classes------------------------*/
+.container{
+  width:70vw;
+  margin:40px auto;
+}
+
   /* --------------- Color Scheme ----------------- 
   darkest #1C1C25
   dark #566373
@@ -28,8 +34,6 @@ html {
   */
 
  /* ---------------Global Styles----------------- */
-
-
 
   body {
     font-family: 'Lora', serif;
@@ -101,3 +105,32 @@ html {
   }
 
 
+@media screen and (max-width:720px){
+  header.primary nav ul {
+    flex-direction:column;
+
+  }
+
+  header.primary nav a{
+    display:block;
+  }
+
+  header.primary nav li{
+    margin-bottom:10px;
+  }
+}
+
+/*this is how we call the section id="intro*/
+#intro{
+  border-bottom: 2px solid #C3CDE0;
+  padding-bottom: 1.3rem;
+}
+
+#intro h2{
+  color: #566373;
+  /*text-decoration:underline;   this is possible*/
+  border-bottom: 2px solid #C3CDE0;
+  padding-bottom:.5rem;
+
+
+}
