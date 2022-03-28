@@ -62,7 +62,9 @@ I would need to change the auto margin and margin qualities to fix it.
     text-align:center;
     color: white;
 
-/* top right bottom left*/
+    /* SVG BAckground */
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231C1C25' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");/* top right bottom left*/
     padding: 40px 40px 20px 40px;
   }
 
@@ -222,6 +224,9 @@ article.widget footer{
   background-color: #566373;
   color:#ECEAF1;
 
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231C1C25' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");/* top right bottom left*/
+
+
 }
 
 #addition-elements h2{
@@ -247,7 +252,6 @@ table{
   border-collapse: collapse;
 }
 
-tr{}
  
 tr:nth-child(odd){
   background-color: #e5eaf3;
@@ -295,7 +299,6 @@ table caption {
 }
 
 
-dl{}
 dt{
   margin-top:1rem;
   font-weight:bold;}
