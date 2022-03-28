@@ -17,6 +17,9 @@ body {
 	line-height: 24px;
 }
 #wrapper {
+	position:relative;
+	height:80vh;
+	width:80vw;
 	background-color: #FFF;
 	border-top-width: 1px;
 	border-right-width: 1px;
@@ -30,20 +33,43 @@ body {
 	margin-right: auto;
 	margin-left: auto;
 }
+
+#wrapper > div {
+	width:125px;
+	height:125px;
+	position:absolute;
+}
+
 #red {
 	background-color: #900;
+	top:0;
+	left:0;
 }
 #green {
 	background-color: #090;
+	top:0;
+	right:0;
 }
 #blue {
 	background-color: #00F;
+	bottom:0;
+	left:0;
 }
 #purple {
 	background-color: #63C;
+	bottom:0;
+	right:0;
 }
 #footer {
 	background-color: #666;
+	margin:20px auto;
+	padding:20px;
+	top:50%;
+	left:50%;
+	height:125px;
+	width:125px;
+	margin-left:-62.5px;
+	margin-top:-62.5px;
 }
 h1 {
 	color: #000;
