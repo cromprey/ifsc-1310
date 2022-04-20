@@ -42,13 +42,7 @@ I would need to change the auto margin and margin qualities to fix it.
   padding:5px;
 }
 
-  /* --------------- Color Scheme ----------------- 
-  darkest #1C1C25
-  dark #566373
-  middle #A9AFBD
-  light #C3CDE0
-  lightest #ECEAF1
-  */
+  
 
  /* ---------------Global Styles----------------- */
 
@@ -224,7 +218,7 @@ article.widget footer{
 #colophon{
   background-color: #566373;
   background-color: #A9AFBD;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ECEAF1' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    padding: 40px 40px 20px 40px;ound-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231C1C25' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");/* top right bottom left*/
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ECEAF1' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    padding: 40px 40px 20px 40px;round-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%231C1C25' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");/* top right bottom left*/
 
 
 }
