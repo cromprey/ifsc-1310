@@ -1,0 +1,68 @@
+/* STYLE SHEET FOR FINAL WEBSITE */
+
+/* -------------Color Theme--------------
+
+ neutral blue: color: #859BAB
+ blackish: #1C2E3B
+ dark greyish: #181C1F
+ royal blue: #145BA6
+ bright blue: #4D9DDB   */
+
+
+
+/* -------------Box Sizing--------------- */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+/* ------------Utility Styles------------- */
+
+.img-right {
+   float: right;
+   margin: 10px 0 10px 20px;
+   border: 1px solid #c0c0c0;
+   padding: 5px; 
+}
+
+.img-left {
+    float: left;
+    margin: 10px 20px 10px 0;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+
+.img-center{
+    display:block;
+    margin: 20px auto;
+    border: 1px solid #c0c0c0;
+    padding: 5px;
+}
+
+/* ------------Responsive Images----------- */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* -------------Global Styles------------- */
+
+body {
+    font-family: 'Tinos', serif;
+    margin:0;
+}
+
+header.primary {
+    background-color: #1C2E3B;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px #c0c0c0;
+    padding: 6em 2em;
+    position: relative;
+}
