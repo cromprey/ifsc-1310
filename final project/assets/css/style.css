@@ -2,11 +2,13 @@
 
 /* -------------Color Theme--------------
 
- neutral blue: color: #859BAB
+ dark neutral blue: #4a5f6d
+ neutral blue: #859BAB
  blackish: #1C2E3B
  dark greyish: #181C1F
  royal blue: #145BA6
- bright blue: #4D9DDB   */
+ bright blue: #4D9DDB
+ white blue: #E2E9F1   */
 
 
 
@@ -26,21 +28,18 @@ html {
 .img-right {
    float: right;
    margin: 10px 0 10px 20px;
-   border: 1px solid #c0c0c0;
    padding: 5px; 
 }
 
 .img-left {
     float: left;
     margin: 10px 20px 10px 0;
-    border: 1px solid #c0c0c0;
     padding: 5px;
 }
 
 .img-center{
     display:block;
     margin: 20px auto;
-    border: 1px solid #c0c0c0;
     padding: 5px;
 }
 
@@ -56,29 +55,29 @@ img {
 
 body {
     font-family: 'Tinos', serif;
-    margin:0;
 }
 
 header.primary {
-    background-color: #1C2E3B;
+    background-color: #181C1F;
+    background-size: cover;
     text-align: center;
     color: #ffffff;
-    /*    text-shadow: 2px 2px #c0c0c0; */
-    padding: 6em 2em;
+    /* text-shadow: 2px 2px #c0c0c0; */
+    padding: 17em 2em;
     position: relative;
 }
 
 
 header.primary::before {
     content: "";
-    background-image: url("../img/dragon-in-space.jpg");
+    background-image: url("../img/dragon-in-space-2.png");
     background-size: cover;
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.4;
+    opacity: 0.6;
 }
 
 header.primary h1 {
@@ -100,21 +99,27 @@ header.primary h1 a {
 }
 
 header.primary h2 {
+    color:#E2E9F1;
     font-family: 'Tinos', serif;
-    font-size: 2em;
+    font-size: 3em;
     /* top, left/right, bottom */
     margin: 20px auto 40px;
     position: relative;
+    display:none;
 }
 
 header.primary nav ul{
-    position: relative;
+    background-color: #151517;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 0;
-    max-width: 900px;
-    margin: 20px auto;
+    padding: 15px 15px;
+    max-width: 100%;
+    margin: 0;
 }
 
 header.primary nav li {
@@ -125,30 +130,207 @@ header.primary nav li {
 
 header.primary nav a:link,
 header.primary nav a:visited {
-    color: #ffffff;
+    color: #fbfbfc;
+    font-size: 1.5rem;
     text-decoration: none;
-    background-color: #000000;
-    background-color: rgba(142, 166, 184, 0.4);
-    padding: 8px 16px;
-    border-radius: 10px;
-    transition: 0.6s;
+    background-color: #151517;
+    padding: 1em 2em;
     display: block;
 }
 
 header.primary nav a:hover,
 header.primary nav a:active {
-    background-color:  #4D9DDB ;
+    background-color:  #fbfbfc ;
+    color: #151517;
 }
+
 
 /* -------------Content--------------- */
 
 section#content {
-    padding: 4em 0;
+    padding: 4em 6em;
 }
 
+
+
+
 section#content h3 {
-    font-family: 'Tinos', serif;
+    font-family: 'Spectral', serif;
     font-size: 2.2em;
-    color:#4D9DDB;
+    color:#4a5f6d;
+    text-align: left;
+    padding-bottom: 0.5em;
+}
+
+
+section#content table {
+    width: 100%;
+    border: 1px solid #181C1F;
+    border-collapse: collapse;
+}
+
+section#content caption{
+    font-size: 1.5rem;
+    margin: 10px;
+    font-family: 'Spectral', serif;
+    color:#7f8893;
+}
+
+section#content th {
+    background: #181C1F;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
+section#content td{
+    border: 1px solid #181C1F;
+    padding: 5px;
+}
+
+section#content tr:nth-child(even) {
+    background: #E2E9F1;
+}
+
+/* -------------Articles--------------- */
+
+section#articles {
+    background-color: #151517;
+    padding: 4em 6em;
+}
+
+section#articles .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
     border-bottom: 1px solid #c0c0c0;
+    padding: 20px;
+} 
+
+section#articles h2,
+#content h2 {
+    border-bottom: 1px solid #c0c0c0;
+    padding-bottom: 20px;
+    flex: 0 0 100%;
+    color: #E2E9F1;
+    text-align: center;
+    font-family: 'Spectral', serif;
+    font-size: 2.5em;
+} 
+
+section#articles h2 {
+    color: #ffffff;
+}
+
+section#articles h3 {
+    font-family: 'Spectral', serif;
+    font-size: 1em;
+    color:#4a5f6d;
+    text-align: center;
+    margin: .5em 3em;
+}
+
+#articles article.post {
+    width: 30%;
+    border: 1px solid #E2E9F1;
+    padding: 10px;
+    transition: 0.6s;
+    font-size: 0.8em;
+    border-radius: 10px;
+    background:#ffffff;
+}
+
+#articles article.post h2 {
+    font-size: 1.5em;
+}
+
+#articles article.post:hover {
+    box-shadow: 0 8px 16px rgba(0 0 0 0.4);
+}
+
+#articles figure img{
+    border-radius: 10px;
+}
+
+#articles li{
+    padding: 5px;
+}
+
+#articles article time,
+#articles article figcaption,
+#articles article footer {
+    font-size: 1em;
+    text-align: left;
+    color: #7f8893;
+    text-transform: uppercase;
+}
+
+#articles .post a:link,
+#articles .post a:visited {
+    color: #3b638b;
+}
+
+/* -------------Hero--------------- */
+
+#slideshow {
+    padding: 2em 2em;
+    margin:4em;
+    border: 1px solid #696969;
+}
+
+/* ------------Aside------------- */
+
+/* attribute selector */
+
+aside[role="complementary"] {
+    background-color: #151517;
+    color: #ffffff;
+    padding: 2.5em;
+}
+
+aside .container {
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+aside article.widget {
+    width: 40%;
+}
+
+aside article.widget h2 {
+    border: 1px solid #E2E9F1;
+    color: #E2E9F1;
+    font-size: 2em;
+    font-family: 'Spectral', serif;
+    text-align: center;
+}
+
+aside article.widget [role="background"]  {
+    max-width: 350px;
+}
+
+.widget table{
+    font-size: 1em;
+    border-collapse: collapse;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.widget table td {
+    border-bottom: 1px solid #E2E9F1;
+    padding: 10px;
+}
+
+.widget table td:nth-child(even) {
+    text-align: right;
+}
+
+.widget footer {
+    font-size: 0.7em;
+    padding-top: 10px;
+    display: none;
 }
