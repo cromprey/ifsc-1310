@@ -1,0 +1,59 @@
+/* Style Sheet for Course Home Page */
+
+/* ---------------COLOR THEME----------------- */
+/* Color Theme Swatches in Hex */
+.color-theme_그림-1-1-hex { color: #D7D9D7; }
+.color-theme_그림-1-2-hex { color: #EFE5D9; }
+.color-theme_그림-1-3-hex { color: #F6EFE7; }
+.color-theme_그림-1-4-hex { color: #8C8C8C; }
+.color-theme_그림-1-5-hex { color: #D4DAD6; }
+
+
+
+
+body {
+    font-family: 'Spectral', serif;
+    font-size: 12px;
+}
+
+
+
+
+/* ---------------Box Sizing----------------- */
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+/*------------Utility classes------------------------*/
+
+.container{
+  width:70vw;
+  margin:40px auto;
+}
+
+/* ---------------Global Styles----------------- */
+
+body {
+  font-family: 'Spectral', serif;
+  color:black;
+  margin:0;
+}
+
+header.primary {
+  background-color: #EFE5D9;
+  text-align: center;
+  color: black;
+
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ECEAF1' fill-opacity='0.4'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");    padding: 40px 40px 20px 40px;
+}
+
+header.primary h1 {
+  font-size: 2.2rem;
+  margin: 20px 0;
+  color: red;
+}
