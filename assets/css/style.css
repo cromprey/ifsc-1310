@@ -218,3 +218,27 @@ section article.foo {
   padding: 40px;
   margin:0;
 }
+
+
+
+section article.foo p{
+  font-size: 12pt;
+  padding-right: 5px;
+}
+
+section article.foo li {
+  font-size: 16pt;
+}
+
+
+section article.foo a{
+  color: #000; 
+  font-size: 16pt;
+  text-decoration: none;
+  padding: 10px;
+}
+
+section article.foo a:hover{
+  color: rgb(230, 62, 62); 
+  transition: .6s;
+}
