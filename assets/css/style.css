@@ -157,6 +157,7 @@ section#intro h2 {
 
 
 #intro figure img{
+  position: center;
   margin-top: 0;
   padding: 5px;
   border-radius: 10px;
