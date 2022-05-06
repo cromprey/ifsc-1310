@@ -119,15 +119,30 @@ header.primary nav ul {
   font-size: 1rem;
 }
 
-aside .container {
-  border: double 3pt;
+
+/*------------- Aside (About Me) ------ */
+
+aside[role="intro"] {
+  background-color: #f6eaea;
+  color: #000;
+  padding: 2.5em;
 }
+
+aside .container {
+  background-color:#f3dddd;
+  border: double 3pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+}
+
 
 aside .container h2{
   color: #000;
   font-family: 'Playfair Display SC', serif;
   font-size: 50pt;
-  text-align: right;
+  text-align: left;
   margin-right: 30px;
   margin-top: 15px;
 }
