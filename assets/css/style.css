@@ -32,6 +32,12 @@ html {
   margin: 40px auto;
 }
 
+.explain {
+  width: 90vw;
+  margin: 40px auto;
+}
+
+
 /* ---------------Global Styles----------------- */
 
 body {
@@ -71,7 +77,7 @@ header.primary h2 {
 }
 
 header.primary h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Playfair Display SC', serif;
   font-size: 20pt;
   margin-left: 20px;
   text-align: left;
@@ -122,39 +128,92 @@ header.primary nav ul {
 
 /*------------- Aside (About Me) ------ */
 
-aside[role="intro"] {
+section#intro {
   background-color: #f6eaea;
   color: #000;
-  padding: 2.5em;
-}
-
-aside .container {
-  background-color:#f3dddd;
-  border: double 3pt;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
   padding: 10px;
 }
 
-
-aside .container h2{
-  color: #000;
-  font-family: 'Playfair Display SC', serif;
-  font-size: 50pt;
-  text-align: left;
-  margin-right: 30px;
-  margin-top: 15px;
-}
-
-aside .container img{
-  margin-top: 0;
+section#intro .container {
+  background-color: #f3dddd;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border: 3px double #000;
   padding: 20px;
-  border-radius: 14px;
+} 
+
+section#intro h2 {
+    border-bottom: 3pt double #000;
+    padding-bottom: 20px;
+    flex: 0 0 100%;
+    color: #000;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20pt;
+} 
+
+
+#intro figure img{
+  margin-top: 0;
+  padding: 5px;
+  border-radius: 10px;
   max-height: 590px;
   max-width: 470px;
 }
 
-aside article.widget {
-  width: 40%;
+#intro p {
+  font-size: 12pt;
+  padding: 2px;
+}
+
+section article.widget {
+  justify-content: space-between;
+  width: 60%;
+  padding: 20px;
+  margin:0;
+}
+
+/*-------- Explain ----------*/
+
+
+section#content {
+  background-color: #f3dddd;
+  color: #000;
+  padding: 10px;
+}
+
+section#content .explain {
+  background-color: #f6eaea;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  border: 3px double #000;
+  padding: 20px;
+} 
+
+section#content h2 {
+    border-bottom: 3pt double #000;
+    padding-bottom: 20px;
+    flex: 0 0 100%;
+    color: #000;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 20pt;
+} 
+
+
+#content p {
+  font-size: 12pt;
+  padding: 2px;
+}
+
+section article.foo {
+  justify-content: space-between;
+  width: 60%;
+  padding: 40px;
+  margin:0;
 }
