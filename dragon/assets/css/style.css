@@ -10,8 +10,6 @@
  bright blue: #4D9DDB
  white blue: #E2E9F1   */
 
-
-
 /* -------------Box Sizing--------------- */
 html {
     box-sizing: border-box;
@@ -21,7 +19,6 @@ html {
   *:after {
     box-sizing: inherit;
   }
-
 
 /* ------------Utility Styles------------- */
 
@@ -51,7 +48,6 @@ img {
 }
 
 /* -------------Global Styles------------- */
-
 
 body {
     font-family: 'Tinos', serif;
@@ -344,3 +340,4 @@ aside article.widget [role="background"]  {
     padding-top: 10px;
     display: none;
 }
+
