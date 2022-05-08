@@ -101,7 +101,7 @@ header.primary nav ul{
 header.primary nav ul li{
   list-style-type:disc;
   padding:5px;
-  margin-left: 50px;
+  margin-left: 30px;
   font-family: 'Noto Serif', serif;
 }
 
@@ -206,7 +206,6 @@ section#content h2 {
     font-size: 20pt;
 } 
 
-
 #content p {
   font-size: 12pt;
   padding: 2px;
@@ -219,8 +218,6 @@ section article.foo {
   margin:0;
 }
 
-
-
 section article.foo p{
   font-size: 12pt;
   padding-right: 5px;
@@ -230,11 +227,9 @@ section article.foo li {
   font-size: 16pt;
 }
 
-
 section article.foo a{
   color: #000; 
   font-size: 16pt;
-  text-decoration: none;
   padding: 10px;
 }
 
